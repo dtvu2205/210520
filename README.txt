@@ -21,14 +21,17 @@
 		- Bounding box of the reservoir: bbox = [ulx, uly, lrx, lry]
 		- A point in the reservoir extent: point = [lat, lon]
 		- Maximum reservoir water level
-	Step 4. Run the code, get the outputs as Expanded_Mask.TIFF, Zone_Mask.TIFF, and Landsat_Mask.csv (the list of Landsat images used to create the masks)
+	Step 4. Run the code, get the outputs as Expanded_Mask.TIFF, Zone_Mask.TIFF, and Landsat_Mask.csv 
+		(the list of Landsat images used to create the masks)
 
 
 
 3. Py_WSA.py
 	This code is to calculate water surface area corresponding to each Landsat image. 
-	Input is the NDWI layers, which are previously calculated by Py_Mask.py and stored in the folders Landsat_5, Landsat_7, and Landsat_8.
-	It also requires the expanded mask and zone mask previously created by Py_Mask.py and stored in the same folder with the Py_WSA.py file.
+	Input is the NDWI layers, which are previously calculated by Py_Mask.py and stored in the folders Landsat_5, Landsat_7, 
+	and Landsat_8.
+	It also requires the expanded mask and zone mask previously created by Py_Mask.py and stored in the same folder with 
+	the Py_WSA.py file.
 
 	1. Select the folder of Landsat images (Landsat_5, Landsat_7, and Landsat_8)
 	2. Run the code, get the outputs as WSA_LS5.csv, WSA_LS7.csv, and WSA_LS8.csv
